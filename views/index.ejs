@@ -145,6 +145,7 @@
       const result = await res.json();
       alert(JSON.stringify(result));
       if (result.success) {
+        form.reset();
         showLogin();
       }
     });
@@ -169,6 +170,7 @@
         localStorage.setItem("token", result.token);
         localStorage.setItem("userId", result.user._id);
         localStorage.setItem("role", result.user.role);
+        form.reset();
         window.location.href = "/dashboard";
       } else {
         alert(result.error || "Login failed");

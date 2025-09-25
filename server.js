@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // MongoDB connection
 mongoose
   .connect("mongodb://127.0.0.1:27017/healthDb")
-  .then(() => console.log("✅ MongoDB Connected"))
+  .then(() => console.log(" MongoDB Connected"))
   .catch((err) => console.log("DB Error:", err));
 
 // Routes
@@ -40,4 +40,4 @@ app.get("/dashboard", (req, res) => {
 });
 
 const PORT = 1891;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
