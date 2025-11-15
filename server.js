@@ -41,4 +41,12 @@ app.get("/dashboard", (req, res) => {
 
 const PORT = 1891;
 app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
+<<<<<<< HEAD
 console.log("master branch");
+=======
+
+console.log("Kavya branch created");
+=======
+console.log("branch sargun created")
+
+>>>>>>> 0090321321529fa13b3318c83ed8a6ad23c8168f
